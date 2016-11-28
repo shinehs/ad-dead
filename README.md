@@ -16,10 +16,10 @@ ps：源码参考co神的chrome 插件教程，非原创，基本属于抄袭！
 
 [围观co神的blog请捅这里](http://www.cnblogs.com/coco1s/p/4725477.html)
 
-效果如图！
+效果如图！童叟无欺！
 未安装效果1：
- (http://7xodxg.com1.z0.glb.clouddn.com/1.jpg)
+ ![image](http://7xodxg.com1.z0.glb.clouddn.com/1.jpg)
  
  安装完毕后：
- (http://7xodxg.com1.z0.glb.clouddn.com/2.jpg)
+ ![image](http://7xodxg.com1.z0.glb.clouddn.com/2.jpg)
 
