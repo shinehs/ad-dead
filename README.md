@@ -1,5 +1,4 @@
-# ！！！我们都还是需要提防一下她，虽然看似童(xiong)叟(da)无(wu)欺(nao)！！！
- - 但是如果你真的这么认为那么在他面前你就像是一个无助的孩子！！！————没错我说的就是度娘！
+# ！！！我们都还是需要提防一下她，虽然看似童(xiong)叟(da)无(wu)欺(nao)！！！————没错我说的就是度娘！
  
   这是一个简单的chrome插件，(如果你已经翻墙，用谷歌，请alt+f4)作用！
   * 让那些大天朝无法谷歌的孩子们，在面对某娘的搜索结果时，不再瑟瑟发抖！不再孤单无助！有ad-dead，就像带了BKB！这一波我很强势！
@@ -15,5 +14,12 @@
 
 ps：源码参考co神的chrome 插件教程，非原创，基本属于抄袭！毫无创造性可言！
 
-围观co神的blog请捅这里：http://www.cnblogs.com/coco1s/p/4725477.html
+[围观co神的blog请捅这里](http://www.cnblogs.com/coco1s/p/4725477.html)
+
+效果如图！
+未安装效果1：
+ (http://7xodxg.com1.z0.glb.clouddn.com/1.jpg)
+ 
+ 安装完毕后：
+ (http://7xodxg.com1.z0.glb.clouddn.com/2.jpg)
 
