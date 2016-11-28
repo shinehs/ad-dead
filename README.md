@@ -2,7 +2,7 @@
 
 这是一个简单的chrome插件，给那些生活在某度(度娘)魔爪下的痛苦的童鞋们一些自由，让那些无节操的推广(广告)统统滚粗！嘎嘎！妥妥的！
 
-下载地址通这里：http://7xodxg.com1.z0.glb.clouddn.com/ad-dead.crx  7牛云！放心下！妥妥的！
+下载地址通这里：http://7xodxg.com1.z0.glb.clouddn.com/ad-dead.crx  7牛云！放心下！妥妥的！下载可能会提示危险什么的，放心下！毕竟我不是什么坏人！
 
 不会安装的童鞋们捅这里：http://jingyan.baidu.com/article/da1091fbdf12e9027949d673.html
 
