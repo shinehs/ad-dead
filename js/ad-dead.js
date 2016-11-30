@@ -50,7 +50,9 @@ $(function() {
 			var ad_css_name = [
 				"cproIframe_u410704_3",
 				"img_ad",
-				"hover_btn"
+				"hover_btn",
+				"iframe_wrapper",
+				"j_click_stats"
 			];
 			//双重清理 先找子节点
 			for (var i = 0; i < ad_id_name.length; i++) {
