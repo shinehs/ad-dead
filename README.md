@@ -5,7 +5,7 @@
   * 放心下！妥妥的！下载可能会提示危险什么的，无视吧！不要因为我长得帅你们就觉得我像坏人！
   * 安装完毕放心调戏某娘去吧~啦啦啦~
 
-  !!![插件下载地址](http://7xodxg.com1.z0.glb.clouddn.com/ad-git.crx)!!! 
+  [插件下载地址](http://7xodxg.com1.z0.glb.clouddn.com/ad-git.crx)
   
   [安装教程](http://jingyan.baidu.com/article/da1091fbdf12e9027949d673.html)
 
