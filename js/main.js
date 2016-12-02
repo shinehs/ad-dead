@@ -2,7 +2,7 @@
 * @Author: shine
 * @Date:   2016-12-02 09:40:47
 * @Last Modified by:   hs
-* @Last Modified time: 2016-12-02 12:29:02
+* @Last Modified time: 2016-12-02 12:53:59
 */
 
 'use strict';
@@ -23,14 +23,6 @@ $(function(){
   	chrome.storage.sync.set({'ad_dead_btn_status':$('.cbtn').is(":checked")});
   	chrome.storage.sync.set({'ad_dead_filter_setting':$('#rules').val().replace(/\，/g,',')});
   }
-
-  $('.button').on('click',function(e){
-  	saveStatus();
-  	//TODO
-  	// chrome.extension.sendMessage({cmd: "getNewsArr"},function(response) {
-    //      console.log(response.arr);
-    //  });
-  });
 
   //listener
   function bindEvent(){
