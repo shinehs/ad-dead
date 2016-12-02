@@ -10,9 +10,15 @@
         "16": "ad-dead-16.png",
         "128": "ad-dead-128.png"
     },
+    "permissions": [
+          "storage"
+    ],
     "browser_action": {
         "default_icon": "ad-dead-16.png",
         "default_popup": "popup.html"
+    },
+    "background":{
+        "page":"background.html"
     },
     "content_scripts": [{
         "matches": ["http://*/", "https://*/", "http://*/*", "https://*/*"],

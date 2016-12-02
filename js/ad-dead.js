@@ -4,8 +4,21 @@ $(function() {
 	var count = 0;
 	var timeId = 0;
 
+	function locStore(name,item,exp){
+      var res = true;
+      if(window.localStorage){
+          item && localStorage.setItem(''+name,item);
+          !item && (res = localStorage.getItem(''+name));
+      }else{
+          item && $.cookie(''+name,item,exp);
+          !item && (res = $.cookie(''+name));
+      }
+      return res;
+  }
+
 	var adDead = {
 		checkUrl : function(){
+			var self =  this;
 			var Checkflag = 0,
 				url = window.location.href;
 
@@ -31,10 +44,12 @@ $(function() {
 			}
 			
 			if (Checkflag == 1) {
-				this.clear();
+				chrome.storage.sync.get('ad_dead_filter_setting',function(obj){
+					self.clear(obj.ad_dead_filter_setting);
+				});
 			}
 		},
-		clear: function() {
+		clear: function(setting) {
 
 			//配置百度推广相关clsname
 			var ad_css_name = [
@@ -54,6 +69,8 @@ $(function() {
 				"iframe_wrapper",
 				"j_click_stats"
 			];
+			
+			ad_css_name = ad_css_name.concat(setting?setting.split(','):[]);
 			//双重清理 先找子节点
 			for (var i = 0; i < ad_id_name.length; i++) {
 				$('#' + ad_id_name[i] +' > div').each(function(i,obj){
@@ -71,7 +88,7 @@ $(function() {
 			this.checkUrl();
 		}
 	}
-
+	window.adDead = adDead;
 	$(document).ready(function() {
 		function dead(){
 			adDead.init();
@@ -84,10 +101,15 @@ $(function() {
 				}
 			}, 1000);
 		}
-		dead();
-		//搜索按钮点击后重新dead
-		$('input.s_btn[type="submit"]').bind('click',function(e){
-			dead();
+		//读取配置
+		chrome.storage.sync.get('ad_dead_btn_status',function(obj){
+			if(obj.ad_dead_btn_status){
+				dead();
+				//搜索按钮点击后重新dead
+				$('input.s_btn[type="submit"]').bind('click',function(e){
+					dead();
+				});
+			}
 		});
 	});
 })

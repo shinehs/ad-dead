@@ -1,0 +1,112 @@
+/*
+* @Author: shine
+* @Date:   2016-11-30 11:25:26
+* @Last Modified by:   hs
+* @Last Modified time: 2016-12-02 12:38:32
+*/
+.cbtn{
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 34px;
+    height: 20px;
+    background: #dfdfdf;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    top: -4px;
+}
+.cbtn:checked{
+    border-color: #08BDBD;
+    background-color: #08BDBD;
+}
+.cbtn:before, .cbtn:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+.cbtn:before{
+    width: 32px;
+    background-color: #fdfdfd;
+}
+.cbtn:after{
+    width: 17px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.cbtn:checked:before{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+.cbtn:checked:after{
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+}
+/*按钮*/
+.button{
+	display: inline-block;
+  zoom: 1;
+  background-color: #08BDBD;
+  vertical-align: baseline;
+  margin: 0 2px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  color:#fff !important;
+}
+.button:active{
+	color: #A3E7FC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3E7FC), to(#A3E7FC));
+  background: -moz-linear-gradient(top, #A3E7FC, #A3E7FC);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A3E7FC', endColorstr='#A3E7FC');
+}
+/*end*/
+.split{
+	border-style: dashed;
+	border-color: #08BDBD;
+}
+textarea{
+	outline:none;
+	resize:none;
+	width: 300px;
+	height: 70px;
+	border-radius: 4px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.cbtn-label{
+	position: relative;
+	top: 0px;
+}
+.content{
+	width: 300px;
+	margin:0 auto;
+	position: relative;
+}
+.button{
+	position: absolute;
+	right: 0px;
+}
