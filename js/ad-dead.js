@@ -69,8 +69,10 @@ $(function() {
 				"iframe_wrapper",
 				"j_click_stats"
 			];
-			
-			ad_css_name = ad_css_name.concat(setting?setting.split(','):[]);
+			var setting = setting?setting.split(','):[];
+			for(var k=0,len=setting.length;k<len;k++){
+				$('.'+setting[k]).remove();
+			}
 			//双重清理 先找子节点
 			for (var i = 0; i < ad_id_name.length; i++) {
 				$('#' + ad_id_name[i] +' > div').each(function(i,obj){
